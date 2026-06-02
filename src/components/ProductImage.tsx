@@ -165,9 +165,9 @@ export function ProductImage({
             borderRadius: '50%',
             overflow: 'hidden',
             opacity: 1,
-            boxShadow: '0 1px 5px rgba(0,0,0,0.10)',
+            boxShadow: '0 2px 6px rgba(0,0,0,0.18)',
             backgroundColor: '#ffffff',
-            padding: '2px',
+            padding: '2.5px',
             transform: 'translateZ(0)',
           }}
         >
@@ -179,9 +179,11 @@ export function ProductImage({
               height: '100%',
               objectFit: 'contain',
               display: 'block',
-              imageRendering: '-webkit-optimize-contrast' as any,
+              imageRendering: 'high-quality',
+              filter: 'contrast(1.15) saturate(1.1)',
               backfaceVisibility: 'hidden',
               borderRadius: '50%',
+              backgroundColor: '#ffffff',
             }}
           />
         </div>
