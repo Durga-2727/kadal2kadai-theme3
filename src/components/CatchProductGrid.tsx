@@ -161,7 +161,7 @@ export default function CatchProductGrid({
               onClick={() => setSelectedCategory(pill.id)}
               className={`px-7 py-3 rounded-2xl text-sm sm:text-base md:text-lg font-extrabold tracking-wider cursor-pointer transition-all duration-300 ${
                 selectedCategory === pill.id
-                  ? 'bg-[#0077B6] text-white shadow-lg shadow-sky-900/10 scale-105'
+                  ? 'bg-[#115E59] text-white shadow-lg shadow-teal-900/10 scale-105'
                   : 'bg-slate-50 hover:bg-slate-100 text-slate-600 hover:shadow-md'
               }`}
             >
@@ -270,7 +270,7 @@ export default function CatchProductGrid({
                     <div>
                       {/* Sub-label & rating */}
                       <div className="flex items-center justify-between gap-2 mb-1">
-                        <span className="text-[10px] font-bold tracking-widest text-[#0077B6] uppercase font-mono">
+                        <span className="text-[10px] font-bold tracking-widest text-[#115E59] uppercase font-mono">
                           {p.localName}
                         </span>
                         <div className="flex items-center gap-1 font-sans">
@@ -283,7 +283,7 @@ export default function CatchProductGrid({
                       <button
                         id={`product-title-${p.id}`}
                         onClick={() => onSelectProduct(p)}
-                        className="font-serif text-base font-bold text-slate-800 tracking-tight hover:text-[#0077B6] text-left block w-full truncate focus:outline-none cursor-pointer"
+                        className="font-serif text-base font-bold text-slate-800 tracking-tight hover:text-[#115E59] text-left block w-full truncate focus:outline-none cursor-pointer"
                       >
                         {p.name}
                       </button>
@@ -301,7 +301,7 @@ export default function CatchProductGrid({
                             id={`weight-select-${p.id}`}
                             value={weightSelected}
                             onChange={(e) => handleWeightChange(p.id, e.target.value)}
-                            className="bg-slate-50 border border-slate-200 text-[11px] font-bold text-slate-700 pr-6 pl-2 py-1 rounded-lg appearance-none focus:outline-none cursor-pointer group-hover/select:border-[#0077B6] transition-colors"
+                            className="bg-slate-50 border border-slate-200 text-[11px] font-bold text-slate-700 pr-6 pl-2 py-1 rounded-lg appearance-none focus:outline-none cursor-pointer group-hover/select:border-[#115E59] transition-colors"
                           >
                             {p.availableWeights.map(w => (
                               <option key={w} value={w}>{w}</option>
@@ -320,7 +320,7 @@ export default function CatchProductGrid({
                               id={`processing-select-${p.id}`}
                               value={processingSelected}
                               onChange={(e) => handleProcessingChange(p.id, e.target.value)}
-                              className="bg-slate-50 border border-slate-200 text-[11px] font-bold text-slate-700 pr-6 pl-2 py-1 rounded-lg appearance-none focus:outline-none cursor-pointer group-hover/select:border-[#0077B6] transition-colors"
+                              className="bg-slate-50 border border-slate-200 text-[11px] font-bold text-slate-700 pr-6 pl-2 py-1 rounded-lg appearance-none focus:outline-none cursor-pointer group-hover/select:border-[#115E59] transition-colors"
                             >
                               {p.processingOptions.map(o => (
                                 <option key={o} value={o}>{o}</option>
@@ -337,8 +337,8 @@ export default function CatchProductGrid({
                       {/* Price column */}
                       <div className="flex flex-col">
                         <div className="flex items-baseline gap-1">
-                          <span className="text-sm font-bold text-[#03045E]">₹</span>
-                          <span className="text-lg font-bold text-[#03045E]">{currentPrice}</span>
+                          <span className="text-sm font-bold text-[#0F4C48]">₹</span>
+                          <span className="text-lg font-bold text-[#0F4C48]">{currentPrice}</span>
                         </div>
                         <span className="text-[10px] text-slate-400 tracking-wide font-mono font-medium">/{weightSelected} pack</span>
                       </div>

@@ -158,7 +158,7 @@ export default function TodayPurchaseSection({
 
                     {/* Left Badges */}
                     <div className="absolute top-2.5 left-2.5 z-25 flex flex-col gap-1.5">
-                      <span className="bg-[#0077B6] text-white text-[8px] sm:text-[9px] font-bold tracking-wider uppercase px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg flex items-center gap-0.5 shadow-sm font-sans">
+                      <span className="bg-[#115E59] text-white text-[8px] sm:text-[9px] font-bold tracking-wider uppercase px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg flex items-center gap-0.5 shadow-sm font-sans">
                         <Zap className="w-2.5 h-2.5 text-yellow-300 fill-yellow-300" />
                         <span>Recently Bought</span>
                       </span>
