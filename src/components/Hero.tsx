@@ -91,8 +91,8 @@ export default function Hero({ onShopClick, onExploreClick }: HeroProps) {
         />
         {/* Layered Gradient Overlay: Dark navy bottom to dark transparent top with requested background tint */}
         <div
-          className="absolute inset-0 bg-gradient-to-t from-[#042F2E] via-[#0F4C48]/60 to-transparent z-10 opacity-90"
-          style={{ backgroundColor: '#115E59' }}
+          className="absolute inset-0 bg-gradient-to-t from-[#052E16] via-[#14532D]/60 to-transparent z-10 opacity-90"
+          style={{ backgroundColor: '#14532D' }}
         />
       </div>
 
@@ -122,7 +122,7 @@ export default function Hero({ onShopClick, onExploreClick }: HeroProps) {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, type: 'spring' }}
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-teal-500/15 border border-teal-400/20 text-teal-300 text-xs font-semibold mb-6 tracking-widest uppercase font-mono"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-500/15 border border-green-400/20 text-green-300 text-xs font-semibold mb-6 tracking-widest uppercase font-mono"
         >
           <Waves className="h-3.5 w-3.5 animate-bounce" />
           <span>Coastal Sourced · Tamil Nadu Direct</span>
@@ -140,7 +140,7 @@ export default function Hero({ onShopClick, onExploreClick }: HeroProps) {
             className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[81px] font-bold tracking-tight leading-[1.1]"
           >
             From Ocean Waves <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-emerald-200 to-teal-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-amber-200 to-green-400">
               to Your Kitchen Flames
             </span>
           </motion.h1>
@@ -156,14 +156,14 @@ export default function Hero({ onShopClick, onExploreClick }: HeroProps) {
                 id="stat-customers"
                 className="flex items-center gap-3 justify-start"
               >
-                <div className="p-2 bg-teal-500/10 rounded-xl text-[#14B8A6] shrink-0 border border-teal-400/20">
-                  <Users className="h-5 w-5 text-teal-200" />
+                <div className="p-2 bg-green-500/10 rounded-xl text-[#0EA5E9] shrink-0 border border-green-400/20">
+                  <Users className="h-5 w-5 text-green-200" />
                 </div>
                 <div className="text-left">
-                  <p className="text-xl sm:text-2xl font-serif font-bold text-[#14B8A6] mb-0 leading-none">
+                  <p className="text-xl sm:text-2xl font-serif font-bold text-[#0EA5E9] mb-0 leading-none">
                     <AnimatedCounter target={10000} suffix="+" />
                   </p>
-                  <p className="text-[10px] sm:text-xs text-teal-100/70 uppercase tracking-wider font-semibold font-sans mt-0.5 leading-none">
+                  <p className="text-[10px] sm:text-xs text-green-100/70 uppercase tracking-wider font-semibold font-sans mt-0.5 leading-none">
                     Happy Customers
                   </p>
                 </div>
@@ -174,14 +174,14 @@ export default function Hero({ onShopClick, onExploreClick }: HeroProps) {
                 id="stat-fishermen"
                 className="flex items-center gap-3 justify-start"
               >
-                <div className="p-2 bg-teal-500/10 rounded-xl text-[#14B8A6] shrink-0 border border-teal-400/20">
-                  <Ship className="h-5 w-5 text-teal-200" />
+                <div className="p-2 bg-green-500/10 rounded-xl text-[#0EA5E9] shrink-0 border border-green-400/20">
+                  <Ship className="h-5 w-5 text-green-200" />
                 </div>
                 <div className="text-left">
-                  <p className="text-xl sm:text-2xl font-serif font-bold text-[#14B8A6] mb-0 leading-none">
+                  <p className="text-xl sm:text-2xl font-serif font-bold text-[#0EA5E9] mb-0 leading-none">
                     <AnimatedCounter target={500} suffix="+" />
                   </p>
-                  <p className="text-[10px] sm:text-xs text-teal-100/70 uppercase tracking-wider font-semibold font-sans mt-0.5 leading-none">
+                  <p className="text-[10px] sm:text-xs text-green-100/70 uppercase tracking-wider font-semibold font-sans mt-0.5 leading-none">
                     Fishermen Partners
                   </p>
                 </div>
@@ -192,14 +192,14 @@ export default function Hero({ onShopClick, onExploreClick }: HeroProps) {
                 id="stat-deliveries"
                 className="flex items-center gap-3 justify-start"
               >
-                <div className="p-2 bg-teal-500/10 rounded-xl text-[#14B8A6] shrink-0 border border-teal-400/20">
-                  <ShieldAlert className="h-5 w-5 text-teal-200" />
+                <div className="p-2 bg-green-500/10 rounded-xl text-[#0EA5E9] shrink-0 border border-green-400/20">
+                  <ShieldAlert className="h-5 w-5 text-green-200" />
                 </div>
                 <div className="text-left">
-                  <p className="text-xl sm:text-2xl font-serif font-bold text-[#14B8A6] mb-0 leading-none">
+                  <p className="text-xl sm:text-2xl font-serif font-bold text-[#0EA5E9] mb-0 leading-none">
                     <AnimatedCounter target={100} suffix="%" />
                   </p>
-                  <p className="text-[10px] sm:text-xs text-teal-100/70 uppercase tracking-wider font-semibold font-sans mt-0.5 leading-none">
+                  <p className="text-[10px] sm:text-xs text-green-100/70 uppercase tracking-wider font-semibold font-sans mt-0.5 leading-none">
                     Fresh Deliveries Daily
                   </p>
                 </div>
@@ -207,7 +207,7 @@ export default function Hero({ onShopClick, onExploreClick }: HeroProps) {
             </div>
 
             {/* Paragraph Description */}
-            <p className="max-w-xl text-center md:text-left text-sm sm:text-base md:text-[21px] text-teal-100/90 leading-relaxed font-sans font-light">
+            <p className="max-w-xl text-center md:text-left text-sm sm:text-base md:text-[21px] text-green-100/90 leading-relaxed font-sans font-light">
               Skip crowded fish markets. Order premium fresh seafood sourced directly from trusted fishermen and delivered to your doorstep within hours of the morning catch.
             </p>
           </motion.div>
@@ -220,7 +220,7 @@ export default function Hero({ onShopClick, onExploreClick }: HeroProps) {
             <button
               id="hero-shop-btn"
               onClick={onShopClick}
-              className="w-full sm:w-auto px-8 py-4 bg-[#115E59] hover:bg-[#0D9488] text-white font-bold text-sm rounded-2xl shadow-xl shadow-teal-950/40 hover:shadow-teal-500/20 transform hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2.5 cursor-pointer border border-[#0D9488]"
+              className="w-full sm:w-auto px-8 py-4 bg-[#14532D] hover:bg-[#15803D] text-white font-bold text-sm rounded-2xl shadow-xl shadow-green-950/40 hover:shadow-green-500/20 transform hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2.5 cursor-pointer border border-[#15803D]"
             >
               <ShoppingBag className="h-4.5 w-4.5" />
               <span>Shop Today's Catch</span>
@@ -230,7 +230,7 @@ export default function Hero({ onShopClick, onExploreClick }: HeroProps) {
               onClick={onExploreClick}
               className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 active:bg-white/15 text-white font-bold text-sm rounded-2xl border border-white/20 hover:border-white/30 backdrop-blur-sm transform hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2.5 cursor-pointer"
             >
-              <Compass className="h-4.5 w-4.5 text-teal-300" />
+              <Compass className="h-4.5 w-4.5 text-green-300" />
               <span>Explore Marketplace</span>
             </button>
           </motion.div>
@@ -241,19 +241,19 @@ export default function Hero({ onShopClick, onExploreClick }: HeroProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto mt-10 pt-8 border-t border-white/10 text-xs tracking-wide text-teal-200/70 font-mono font-medium"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto mt-10 pt-8 border-t border-white/10 text-xs tracking-wide text-green-200/70 font-mono font-medium"
         >
           <div className="flex items-center justify-center gap-2">
-            <span className="text-emerald-400 font-bold">✓</span> CHEMICAL-FREE
+            <span className="text-amber-400 font-bold">✓</span> CHEMICAL-FREE
           </div>
           <div className="flex items-center justify-center gap-2">
-            <span className="text-emerald-400 font-bold">✓</span> COLD CHAIN TRACKED
+            <span className="text-amber-400 font-bold">✓</span> COLD CHAIN TRACKED
           </div>
           <div className="flex items-center justify-center gap-2">
-            <span className="text-emerald-400 font-bold">✓</span> HYGIENICALLY CUT
+            <span className="text-amber-400 font-bold">✓</span> HYGIENICALLY CUT
           </div>
           <div className="flex items-center justify-center gap-2">
-            <span className="text-emerald-400 font-bold">✓</span> ORDER BEFORE 7 AM
+            <span className="text-amber-400 font-bold">✓</span> ORDER BEFORE 7 AM
           </div>
         </motion.div>
 

@@ -41,28 +41,28 @@ export default function TrustBanner() {
   const stats = [
     {
       id: 'stat-customers',
-      icon: <Users className="h-6 w-6 text-teal-200" />,
+      icon: <Users className="h-6 w-6 text-green-200" />,
       target: 10000,
       suffix: '+',
       label: 'Happy Customers'
     },
     {
       id: 'stat-fishermen',
-      icon: <Ship className="h-6 w-6 text-teal-200" />,
+      icon: <Ship className="h-6 w-6 text-green-200" />,
       target: 500,
       suffix: '+',
       label: 'Fishermen Partners'
     },
     {
       id: 'stat-locations',
-      icon: <Navigation2 className="h-6 w-6 text-teal-200" />,
+      icon: <Navigation2 className="h-6 w-6 text-green-200" />,
       target: 50,
       suffix: '+',
       label: 'Coastal Locations'
     },
     {
       id: 'stat-deliveries',
-      icon: <ShieldAlert className="h-6 w-6 text-teal-200" />,
+      icon: <ShieldAlert className="h-6 w-6 text-green-200" />,
       target: 100,
       suffix: '%',
       label: 'Fresh Deliveries Daily'
@@ -70,7 +70,7 @@ export default function TrustBanner() {
   ];
 
   return (
-    <section id="trust-banner" className="relative z-30 -mt-1 w-full bg-[#0F4C48] py-8 border-y border-white/5 shadow-lg text-white">
+    <section id="trust-banner" className="relative z-30 -mt-1 w-full bg-[#14532D] py-8 border-y border-white/5 shadow-lg text-white">
       <div id="trust-stats-grid" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-0 text-center">
           {stats.map((stat, idx) => (
@@ -79,14 +79,14 @@ export default function TrustBanner() {
               id={stat.id}
               className="flex flex-col md:flex-row items-center justify-center gap-4 group p-4 hover:bg-white/5 rounded-2xl md:rounded-none transition-all duration-300 md:border-r border-white/10 last:border-r-0"
             >
-              <div className="p-2.5 bg-white/5 rounded-xl group-hover:scale-110 transition-transform shadow-inner flex items-center justify-center text-[#14B8A6]">
+              <div className="p-2.5 bg-white/5 rounded-xl group-hover:scale-110 transition-transform shadow-inner flex items-center justify-center text-[#0EA5E9]">
                 {stat.icon}
               </div>
               <div className="md:text-left flex flex-col justify-center">
-                <p className="text-2xl sm:text-3xl font-serif font-bold tracking-tight text-[#14B8A6] mb-0.5">
+                <p className="text-2xl sm:text-3xl font-serif font-bold tracking-tight text-[#0EA5E9] mb-0.5">
                   <AnimatedCounter target={stat.target} suffix={stat.suffix} />
                 </p>
-                <p className="text-[10px] sm:text-xs text-teal-100/70 uppercase tracking-wider font-semibold font-sans">
+                <p className="text-[10px] sm:text-xs text-green-100/70 uppercase tracking-wider font-semibold font-sans">
                   {stat.label}
                 </p>
               </div>

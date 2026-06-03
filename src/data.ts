@@ -51,7 +51,7 @@ export const FISHERMEN: Fisherman[] = [
     partnerSince: '2020',
     rating: 4.8,
     image: 'https://images.unsplash.com/photo-1628157582853-a796fa650a6a?w=200&auto=format&fit=crop&q=80',
-    avatarColor: 'bg-teal-600'
+    avatarColor: 'bg-green-600'
   }
 ];
 
@@ -94,7 +94,7 @@ export const TESTIMONIALS: Testimonial[] = [
     city: 'Velachery',
     quote: 'The prawns were so sweet and soft. Delivery was delayed by 10 minutes but quality was amazing.',
     rating: 4,
-    avatarColor: 'bg-teal-600'
+    avatarColor: 'bg-green-600'
   },
   {
     id: '6',
@@ -102,7 +102,7 @@ export const TESTIMONIALS: Testimonial[] = [
     city: 'Mylapore',
     quote: 'No messy kitchen work at all. Raw fish was perfectly descaled and ready to throw in the kadaai.',
     rating: 5,
-    avatarColor: 'bg-teal-600'
+    avatarColor: 'bg-green-600'
   },
   {
     id: '7',
@@ -142,7 +142,7 @@ export const TESTIMONIALS: Testimonial[] = [
     city: 'Chromepet',
     quote: 'Usually online fish has some sour odor, but this was crystal clean. Made a high-quality lunch!',
     rating: 5,
-    avatarColor: 'bg-teal-600'
+    avatarColor: 'bg-green-600'
   },
   {
     id: '12',
@@ -166,7 +166,7 @@ export const TESTIMONIALS: Testimonial[] = [
     city: 'Royapettah',
     quote: 'Best cut of Vanjaram steaks ever. Perfect thickness of slices and zero blood clutter left inside.',
     rating: 5,
-    avatarColor: 'bg-teal-600'
+    avatarColor: 'bg-green-600'
   }
 ];
 
