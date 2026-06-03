@@ -158,7 +158,7 @@ export default function TodayPurchaseSection({
 
                     {/* Left Badges */}
                     <div className="absolute top-2.5 left-2.5 z-25 flex flex-col gap-1.5">
-                      <span className="bg-[#14532D] text-white text-[8px] sm:text-[9px] font-bold tracking-wider uppercase px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg flex items-center gap-0.5 shadow-sm font-sans">
+                      <span className="bg-[#64748B] text-white text-[8px] sm:text-[9px] font-bold tracking-wider uppercase px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg flex items-center gap-0.5 shadow-sm font-sans">
                         <Zap className="w-2.5 h-2.5 text-yellow-300 fill-yellow-300" />
                         <span>Recently Bought</span>
                       </span>
@@ -257,8 +257,8 @@ export default function TodayPurchaseSection({
                         onClick={(e) => triggerAddToCart(e, p)}
                         className={`p-2 px-3 rounded-xl cursor-pointer text-[10px] sm:text-xs font-extrabold transition-all duration-300 flex items-center gap-1 shadow-sm ${
                           isFirstAdded
-                            ? 'bg-[#F59E0B] text-white shadow-amber-50'
-                            : 'bg-gradient-to-r from-orange-500 to-amber-500 text-white hover:from-orange-600 hover:to-amber-600 hover:shadow-md shadow-orange-100'
+                            ? 'bg-[#C084FC] text-white shadow-purple-50'
+                            : 'bg-gradient-to-r from-orange-500 to-purple-500 text-white hover:from-orange-600 hover:to-purple-600 hover:shadow-md shadow-orange-100'
                         }`}
                       >
                         {isFirstAdded ? (

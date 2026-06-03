@@ -19,14 +19,14 @@ export default function Testimonials() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-green-50 border border-green-100 rounded-full mb-3 text-[10px] sm:text-xs uppercase font-bold text-[#14532D] tracking-wider font-mono">
-            <MessageSquare className="h-4 w-4 text-[#14532D]" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-slate-50 border border-slate-100 rounded-full mb-3 text-[10px] sm:text-xs uppercase font-bold text-[#64748B] tracking-wider font-mono">
+            <MessageSquare className="h-4 w-4 text-[#64748B]" />
             <span>100% Genuine Reviews</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 leading-tight">
             Customer Reviews
           </h2>
-          <div className="w-12 h-1 bg-[#14532D] mx-auto mt-4 rounded-full" />
+          <div className="w-12 h-1 bg-[#64748B] mx-auto mt-4 rounded-full" />
           <p className="text-xs sm:text-sm text-slate-500 mt-4 leading-relaxed font-sans max-w-xl mx-auto">
             Hear from families, home cooks, and local chefs who enjoy our dawn-sourced, chemical-free fresh catch delivered straight to their kitchen counters.
           </p>
@@ -47,7 +47,7 @@ export default function Testimonials() {
                 id={`review-card-${item.id}-${idx}`}
                 className="w-[280px] sm:w-[320px] shrink-0 bg-slate-50/60 rounded-2xl border border-slate-100/90 hover:bg-white hover:border-slate-200/50 hover:shadow-lg transition-all duration-300 p-5 flex flex-col justify-between relative"
               >
-                <Quote className="h-6 w-6 text-[#14532D]/10 absolute top-4 right-4" />
+                <Quote className="h-6 w-6 text-[#64748B]/10 absolute top-4 right-4" />
                 
                 <div>
                   {/* Rating Stars (mix of 4 and 5) */}
@@ -57,7 +57,7 @@ export default function Testimonials() {
                         key={i}
                         className={`h-3.5 w-3.5 ${
                           i < item.rating
-                            ? 'text-amber-400 fill-amber-400'
+                            ? 'text-purple-400 fill-purple-400'
                             : 'text-gray-200'
                         }`}
                       />
@@ -92,7 +92,7 @@ export default function Testimonials() {
 
         {/* Visual Info Badge at bottom */}
         <div className="mt-8 flex justify-center">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-100 px-4 py-2 rounded-xl text-[11px] font-sans font-semibold text-orange-850">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-50 to-purple-50 border border-orange-100 px-4 py-2 rounded-xl text-[11px] font-sans font-semibold text-orange-850">
             <span className="flex h-2 w-2 rounded-full bg-orange-500 animate-pulse" />
             Average Customer Rating: <strong className="text-orange-600">4.85★ / 5.0★</strong> across 2,400+ orders this month.
           </div>

@@ -203,7 +203,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-800 antialiased selection:bg-[#14532D]/10 leading-normal select-none">
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-800 antialiased selection:bg-[#64748B]/10 leading-normal select-none">
       
       {/* Sticky Navigation */}
       <Navigation
@@ -342,7 +342,7 @@ export default function App() {
               className="bg-white rounded-3xl w-full max-w-lg shadow-2xl overflow-hidden border border-slate-100 flex flex-col relative my-4"
             >
               {/* Header block */}
-              <div className="bg-[#14532D] p-6 text-white flex flex-col items-center justify-center text-center relative">
+              <div className="bg-[#64748B] p-6 text-white flex flex-col items-center justify-center text-center relative">
                 <button
                   id="checkout-close-btn"
                   onClick={() => setCheckoutStep(null)}
@@ -350,11 +350,11 @@ export default function App() {
                 >
                   ✕
                 </button>
-                <div className="p-3 bg-[#0EA5E9] text-white rounded-2xl mb-3 shadow-md">
+                <div className="p-3 bg-[#E9D5FF] text-white rounded-2xl mb-3 shadow-md">
                   <ShieldCheck className="h-6 w-6 animate-pulse" />
                 </div>
                 <h3 className="font-serif text-xl sm:text-2xl font-bold tracking-tight">Direct Sea Sourced Checkout</h3>
-                <p className="text-xs text-green-200 mt-1 font-sans">Step {checkoutStep === 'shipping' ? '1 of 2: Delivery information' : checkoutStep === 'payment' ? '2 of 2: Cold Gateway pay' : 'Complete! order trace active'}</p>
+                <p className="text-xs text-slate-200 mt-1 font-sans">Step {checkoutStep === 'shipping' ? '1 of 2: Delivery information' : checkoutStep === 'payment' ? '2 of 2: Cold Gateway pay' : 'Complete! order trace active'}</p>
               </div>
 
               {/* Step 1: Shipping Form fields info */}
@@ -367,7 +367,7 @@ export default function App() {
                         type="text"
                         value={shippingName}
                         onChange={(e) => setShippingName(e.target.value)}
-                        className="w-full px-3.5 py-2.5 border border-gray-200 focus:outline-[#14532D] rounded-xl text-xs bg-gray-50/50"
+                        className="w-full px-3.5 py-2.5 border border-gray-200 focus:outline-[#64748B] rounded-xl text-xs bg-gray-50/50"
                       />
                     </div>
                     <div>
@@ -376,7 +376,7 @@ export default function App() {
                         type="tel"
                         value={shippingPhone}
                         onChange={(e) => setShippingPhone(e.target.value)}
-                        className="w-full px-3.5 py-2.5 border border-gray-200 focus:outline-[#14532D] rounded-xl text-xs bg-gray-50/50"
+                        className="w-full px-3.5 py-2.5 border border-gray-200 focus:outline-[#64748B] rounded-xl text-xs bg-gray-50/50"
                       />
                     </div>
                   </div>
@@ -387,7 +387,7 @@ export default function App() {
                       type="text"
                       value={shippingAddress}
                       onChange={(e) => setShippingAddress(e.target.value)}
-                      className="w-full px-3.5 py-2.5 border border-gray-200 focus:outline-[#14532D] rounded-xl text-xs bg-gray-50/50"
+                      className="w-full px-3.5 py-2.5 border border-gray-200 focus:outline-[#64748B] rounded-xl text-xs bg-gray-50/50"
                     />
                   </div>
 
@@ -399,7 +399,7 @@ export default function App() {
                         value={shippingPIN => shippingPin}
                         onChange={(e) => setShippingPin(e.target.value)}
                         placeholder="600004"
-                        className="w-full px-3.5 py-2.5 border border-gray-200 focus:outline-[#14532D] rounded-xl text-xs bg-gray-50/50 text-slate-800 font-bold"
+                        className="w-full px-3.5 py-2.5 border border-gray-200 focus:outline-[#64748B] rounded-xl text-xs bg-gray-50/50 text-slate-800 font-bold"
                       />
                     </div>
                     <div>
@@ -425,7 +425,7 @@ export default function App() {
                     <button
                       id="checkout-step1-next"
                       onClick={() => setCheckoutStep('payment')}
-                      className="px-6 py-3 bg-[#14532D] hover:bg-[#15803D] text-white rounded-xl text-xs uppercase tracking-widest font-bold shadow-md cursor-pointer flex items-center gap-1.5"
+                      className="px-6 py-3 bg-[#64748B] hover:bg-[#475569] text-white rounded-xl text-xs uppercase tracking-widest font-bold shadow-md cursor-pointer flex items-center gap-1.5"
                     >
                       <span>Proceed to Payment</span>
                       <Truck className="h-4 w-4" />
@@ -452,7 +452,7 @@ export default function App() {
                     {/* Simulated Cash on Delivery */}
                     <div className="p-4 border border-gray-200/80 bg-slate-50 rounded-2xl flex items-center justify-between">
                       <div className="flex items-center gap-3">
-                        <input type="radio" defaultChecked className="accent-[#14532D]" id="pay-cod-radio" />
+                        <input type="radio" defaultChecked className="accent-[#64748B]" id="pay-cod-radio" />
                         <div>
                           <strong className="text-xs text-slate-800 font-bold block leading-snug">Secure Cash / Pay on Delivery (Recommended)</strong>
                           <span className="text-[10px] text-slate-400 font-medium">Clear cash / UPI at your morning doorstep.</span>
@@ -485,7 +485,7 @@ export default function App() {
                     <button
                       id="checkout-payment-complete"
                       onClick={handleCompleteOrder}
-                      className="px-6 py-3 bg-[#14532D] hover:bg-black text-white rounded-xl text-xs uppercase tracking-widest font-bold shadow-md cursor-pointer flex items-center gap-1.5"
+                      className="px-6 py-3 bg-[#64748B] hover:bg-black text-white rounded-xl text-xs uppercase tracking-widest font-bold shadow-md cursor-pointer flex items-center gap-1.5"
                     >
                       <CreditCard className="h-4 w-4" />
                       <span>Place Sourced Order</span>
@@ -505,7 +505,7 @@ export default function App() {
 
                   <div>
                     <h4 className="font-serif text-2xl font-bold text-slate-900 leading-tight">Order Placed Successfully!</h4>
-                    <p className="text-xs text-green-600 font-bold block font-mono uppercase mt-1 tracking-widest">Order ID: K2K-{Math.floor(Math.random() * 89999 + 10000)}</p>
+                    <p className="text-xs text-slate-600 font-bold block font-mono uppercase mt-1 tracking-widest">Order ID: K2K-{Math.floor(Math.random() * 89999 + 10000)}</p>
                     
                     <p className="text-xs text-slate-500 mt-3 max-w-sm mx-auto leading-relaxed font-sans font-light">
                       Thank you, <strong>{shippingName}</strong>. Your morning catch reservation is confirmed! The fisherman network has been allocated to lock down fresh items of your choice.
@@ -532,7 +532,7 @@ export default function App() {
                     <button
                       id="checkout-completed-close"
                       onClick={() => setCheckoutStep(null)}
-                      className="w-full bg-[#14532D] hover:bg-[#15803D] text-white text-xs font-bold tracking-widest uppercase py-3.5 rounded-xl cursor-pointer shadow-sm hover:shadow-green-100 transition-all flex items-center justify-center gap-1.5"
+                      className="w-full bg-[#64748B] hover:bg-[#475569] text-white text-xs font-bold tracking-widest uppercase py-3.5 rounded-xl cursor-pointer shadow-sm hover:shadow-slate-100 transition-all flex items-center justify-center gap-1.5"
                     >
                       <Navigation2 className="h-4 w-4" />
                       <span>Back to Catch Galleries</span>
